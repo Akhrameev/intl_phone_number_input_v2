@@ -48,6 +48,7 @@ class SelectorButton extends StatelessWidget {
                     leadingPadding: selectorConfig.leadingPadding,
                     trailingSpace: selectorConfig.trailingSpace,
                     textStyle: selectorTextStyle,
+                    dropdownColor: selectorConfig.dropdownColor,
                   ),
                   value: country,
                   items: mapCountryToDropdownItem(countries),
@@ -61,6 +62,7 @@ class SelectorButton extends StatelessWidget {
                 leadingPadding: selectorConfig.leadingPadding,
                 trailingSpace: selectorConfig.trailingSpace,
                 textStyle: selectorTextStyle,
+                dropdownColor: selectorConfig.dropdownColor,
               )
         : MaterialButton(
             key: Key(TestHelper.DropdownButtonKeyValue),
@@ -92,6 +94,7 @@ class SelectorButton extends StatelessWidget {
                 leadingPadding: selectorConfig.leadingPadding,
                 trailingSpace: selectorConfig.trailingSpace,
                 textStyle: selectorTextStyle,
+                dropdownColor: selectorConfig.dropdownColor,
               ),
             ),
           );
@@ -111,6 +114,7 @@ class SelectorButton extends StatelessWidget {
           textStyle: selectorTextStyle,
           withCountryNames: false,
           trailingSpace: selectorConfig.trailingSpace,
+          dropdownColor: selectorConfig.dropdownColor,
         ),
       );
     }).toList();
@@ -133,6 +137,7 @@ class SelectorButton extends StatelessWidget {
               countries,
               locale,
               searchBoxDecoration: searchBoxDecoration,
+              cursorColor: selectorConfig.cursorColor,
               showFlags: selectorConfig.showFlags,
               useEmoji: selectorConfig.useEmoji,
               autoFocus: autoFocusSearchField,
@@ -181,6 +186,7 @@ class SelectorButton extends StatelessWidget {
                       countries,
                       locale,
                       searchBoxDecoration: searchBoxDecoration,
+                      cursorColor: selectorConfig.cursorColor,
                       scrollController: controller,
                       showFlags: selectorConfig.showFlags,
                       useEmoji: selectorConfig.useEmoji,
